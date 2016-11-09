@@ -1,0 +1,25 @@
+config/database.yml
+config/constant_info.yml
+
+# Ignore all logfiles and tempfiles.
+log/*.log
+tmp/
+.idea/
+# files/**
+.DS_Store
+*.swp
+vendor/cache
+.ruby-version
+.rvmrc
+db/schema.rb
+.gemrc
+.tags
+thin.conf
+plcg.god
+nohup.out
+public/uploads/**
+*.log
+restart_server
+lib/can_play/
+lib/ror_hack/
+start_with_system.sh
