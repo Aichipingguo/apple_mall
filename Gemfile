@@ -23,6 +23,26 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+
+# 增加的gem
+gem 'devise', '3.4.1'
+gem 'ransack', '1.5.1'
+# 文字处理
+gem 'sanitize', '3.0.0'
+# 分页
+gem 'kaminari', '0.16.1'
+# 上传
+gem 'carrierwave', '0.10.0'
+
+gem 'ror_hack'
+
+gem 'ancestry', '2.1.0'
+
+# 文字转化为拼音
+gem "ruby-pinyin"
+
+#增加的gem
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
