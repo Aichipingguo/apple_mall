@@ -38,6 +38,8 @@ gem 'ror_hack'
 
 gem 'ancestry', '2.1.0'
 
+gem 'simple_form', '3.0.2'
+
 # 文字转化为拼音
 gem "ruby-pinyin"
 

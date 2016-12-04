@@ -5,8 +5,11 @@ Rails.application.routes.draw do
 
   root :to=>'home#index'
 
-
-  devise_for :users , :controller => {:sessions => "sessions" , :registrations => "registrations"}
+  devise_for :users, :controllers => {
+    :sessions => "sessions",
+    :registrations => "registrations",
+    :passwords => "passwords"
+  }
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

@@ -1,7 +1,5 @@
 # -*- encoding : utf-8 -*-
-class SessionsController < Devise::SessionsController
+class RegistrationsController < Devise::RegistrationsController
 
-  layout 'login'
-
-
+  layout  'login'
 end
