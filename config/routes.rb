@@ -10,6 +10,11 @@ Rails.application.routes.draw do
     :registrations => "registrations",
     :passwords => "passwords"
   }
+
+  get 'main' => 'admin/main#index'
+
+  namespace  :admin  do
+  end
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

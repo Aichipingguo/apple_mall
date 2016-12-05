@@ -21,13 +21,11 @@ module AppleMall
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
-    config.autoload_paths += Dir[Rails.root.join('app', 'models', '{**/}')]
-
     # Auto-load API and its subdirectories
+    config.autoload_paths << Rails.root.join('lib')
+    # config.i18n.default_locale = :de
     config.paths.add 'app/api', glob: '**/*.rb'
     config.autoload_paths += Dir["#{Rails.root}/app/api/*"]
-
     config.time_zone = 'Beijing'
     config.active_record.default_timezone = :local
     config.i18n.locale = 'zh-CN'
